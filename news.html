@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Modern News</title>
+</head>
+
+<body>
+    <nav>
+        <div class="mainnav container  flex " id="myTopnav">
+            <a class="company-logo" href="">
+             <img src="news.jpg" alt="">
+            </a>
+            <div class="navlinks">
+                <ul class="flex">
+                    <li class="hoverlink navitem" id="ipl" onclick="onNavitemClick('ipl')">IPL</li>
+                    <li class="hoverlink navitem" id="finance" onclick="onNavitemClick('finance')">FINANCE</li>
+                    <li class="hoverlink navitem" id="politics" onclick="onNavitemClick('politics')">POLITICS</li>
+                </ul>
+            </div>
+            <div class="searchbar flex">
+                <input type="text " id="stext" class="searchinput" placeholder="Search Here...">
+                <button class="searchbtn" id="sbtn">Search</button>
+
+            </div>
+            <a  onclick="myFunction()" class="icon" >
+            <i  class="fa fa-bars"></i>
+            </a>
+        </div>
+       
+       
+    </nav>
+    
+     <!-- <div class="topnav flex" id="myTopnav">
+        <a class="company-logo" href="">
+            <img src="news.jpg" alt="">
+           </a>
+        <div class="links">
+        <a class="hoverlink navitem" id="ipl" onclick="onNavitemClick('ipl')">IPL</a>
+        <a class="hoverlink navitem" id="finance" onclick="onNavitemClick('finance')">FINANCE</a>
+        <a class="hoverlink navitem" id="politics" onclick="onNavitemClick('politics')">POLITICS</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="searchbar">
+        <input type="text " id="stext" class="searchinput" placeholder="Search Here...">
+        <button class="searchbtn" id="sbtn">Search</button>
+    </div>
+    </div>
+     -->
+    <main>
+        <di class="card-container container flex" id="cardcontainer">
+            
+            <!-- <div class="card">
+                <div class="cardheader">
+                    <img src="https://via.placeholder.com/400x200" id="newsimg" alt="news img">
+                </div>
+                <div class="cardcontent">
+                    <h3 id="title">This is the title</h3>
+                    <h4 class="newssource" id="nsource">End gadget 20/09/2023</h4>
+                    <p id="ndescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ea tenetur asperiores rerum rem eaque, architecto recusandae beatae repellat praesentium.</p>
+
+                </div>
+            </div>
+        </di> -->
+    </main>
+    <template id="temp">
+        <div class="card">
+            <div class="cardheader">
+                <img src="https://via.placeholder.com/400x200" id="newsimg" alt="news img">
+            </div>
+            <div class="cardcontent">
+                <h3 id="title">This is the title</h3>
+                <h6 class="newssource" id="nsource">End gadget 20/09/2023</h6>
+                <p id="ndescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ea tenetur asperiores rerum rem eaque, architecto recusandae beatae repellat praesentium.</p>
+
+            </div>
+        </div>
+    </di>
+    </template>
+    <div class="footer">
+        <div class="footercontent">
+           <p> © 2023 Live News. Made with <i class='bx bxs-heart bx-flashing' style='color:#e61a1a' ></i> by kk</p> 
+         </div>
+     </div>
+    <script src="scrip.js"></script>
+    
+</body>
+</html>

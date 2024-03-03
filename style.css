@@ -1,0 +1,214 @@
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* craeting variable for faster use case*/
+    :root{
+        --primary-text-color:#183B56;
+        --secondary-text-color:#470592;
+        --accent-color:#2294ed;
+        --accent-color-dark:#1d69a3;
+    }
+      
+    body{
+        font-family: poppins,sans-serif;
+        color: var(--primary-text-color);
+        
+    }
+    p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--secondary-text-color);
+        line-height: 1.4rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container{
+        max-width: 1100px;
+        margin-inline:auto;
+        overflow: hidden;
+    }
+    nav{
+        
+        box-shadow:  0 0 4px purple;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index:90;
+        background-color: whitesmoke;
+    }
+    .mainnav{
+        justify-content: space-between;
+        padding: 8px 0px;
+    }
+    .company-logo img{
+        width:50px;
+        mix-blend-mode:multiply;
+        
+    }
+    .navlinks ul{
+        gap: 16px;
+    }
+    .hoverlink:hover{
+        cursor: pointer;
+        color: var(--secondary-text-color);
+    }
+    .hoverlink:active{
+        color: red;
+    }
+    .searchbar{
+        height: 32px;
+        gap: 8px;
+    }
+    .searchinput{
+        width: 200px;
+        height: 100%;
+        padding-inline: 12px;
+        border-radius: 4px;
+        border: 2px solid blue;
+    
+    }
+    .searchbtn{
+        background-color: var(--accent-color);
+        color: white;
+        padding: 8px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .searchbtn:active{
+        scale: 0.8;
+        transition: all .5s;
+        
+    }
+    .searchbtn:hover{
+        color: var(--accent-color-dark);
+    }
+    main{
+        padding: 20px;
+        margin-top: 100px;
+    }
+    .card-container{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        align-items: start;
+        
+    }
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color:#fdff;
+    transform: translateY(-5px);
+    transition: all .3s ease;
+}
+.cardheader img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cardcontent{
+    padding: 12px;
+}
+.newssource{
+    margin-block: 12px
+}
+.navitem.active{
+    background-color: yellow;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+}
+.mainnav .icon{
+    display: none;
+}
+@font-face {
+  font-family: Agency;
+   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/agency-fb-bold.woff);
+}
+body { 
+  font-family: Avenir, sans-serif;
+  marging: 0;
+}
+
+
+input[type="text"] { 
+  padding: .5rem; 
+  font-size: 1.2rem; 
+  width: 22rem; 
+}
+input[type="text"] {
+  padding: .5rem;
+}
+label {
+  margin: 1rem;
+}
+
+.footer{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 76px;
+  background-color: #673ab7;
+  gap: .1rem;
+  
+}
+.footercontent p{
+  font-weight: 700;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .mainnav div:not(:first-child) {display: none;}
+  .mainnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainnav.responsive {position: relative;}
+  .mainnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .mainnav{
+    padding: 10px;
+  }
+  .mainnav.responsive div {
+    float: none;
+    display: block;
+    text-align: center;
+    
+    
+  }
+  .navlinks ul{
+   display: block;
+   line-height: 3;
+   text-align: center;
+  }
+}
+
+</style>
